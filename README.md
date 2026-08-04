@@ -1,16 +1,57 @@
-# React + Vite
+# ERP Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website landing page sederhana untuk memperkenalkan sistem ERP. Halaman ini berisi navbar, hero, about, pricing, contact, dan dialog login.
 
-Currently, two official plugins are available:
+## Fitur
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Navbar dengan link ke setiap section halaman.
+- Hero section untuk memperkenalkan produk ERP.
+- About section untuk menjelaskan manfaat sistem.
+- Pricing section untuk menampilkan pilihan paket.
+- Contact section dengan form sederhana.
+- Login dialog untuk tampilan masuk ke dashboard.
 
-## React Compiler
+## Teknologi yang Digunakan
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Teknologi | Alasan Pemilihan |
+| --- | --- |
+| React | Digunakan untuk membuat tampilan berbasis komponen sehingga setiap bagian seperti Navbar, Hero, Pricing, Contact, dan Dialog lebih mudah dikelola. |
+| Vite | Dipilih karena ringan, cepat saat development, dan mudah digunakan untuk project React. |
+| Tailwind CSS | Digunakan untuk styling karena class utility-nya membuat pembuatan layout dan desain lebih cepat tanpa menulis banyak CSS manual. |
+| Lucide React | Digunakan untuk icon karena mudah dipakai di React dan memiliki tampilan icon yang konsisten. |
+| ESLint | Digunakan untuk membantu menjaga kualitas kode dan mendeteksi error sederhana seperti import yang tidak digunakan. |
 
-## Expanding the ESLint configuration
+## Struktur Halaman
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `Navbar`: navigasi utama dan tombol login.
+- `Hero`: bagian pembuka landing page.
+- `About`: penjelasan singkat tentang ERP.
+- `Pricing`: daftar paket harga.
+- `Contact`: form untuk menghubungi tim.
+- `LoginDialog`: dialog login sederhana.
+
+## Cara Menjalankan Project
+
+Install dependency:
+
+```bash
+npm install
+```
+
+Jalankan development server:
+
+```bash
+npm run dev
+```
+
+Build project:
+
+```bash
+npm run build
+```
+
+Jalankan lint:
+
+```bash
+npm run lint
+```

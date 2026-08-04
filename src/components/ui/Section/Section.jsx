@@ -1,8 +1,8 @@
 import Container from "../Container/Container"
 
-function Section({ children, className = '', containerClassName = ''}) {
+function Section({ children, className = '', containerClassName = '', id }) {
   return (
-    <section className={`py-16 md:py-24 ${className}`}>
+    <section id={id} className={`py-16 md:py-24 ${className}`}>
         <Container className={containerClassName}>
             {children}
         </Container>

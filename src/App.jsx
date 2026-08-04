@@ -1,14 +1,14 @@
-import { Section, Typography } from "components"
+import { Navbar, Hero, About, Pricing, Contact } from "./views"
 
 function App() {
   return (
-    <main className="min-h-screenflex items-center justify-center">
-      <Section>
-        <Typography variant='h1'>
-          ERP Landing Page
-        </Typography>
-      </Section>
-    </main>
+    <div>
+      <Navbar/>
+      <Hero/>
+      <About/>
+      <Pricing/>
+      <Contact/>
+    </div>
   )
 }
 
